@@ -108,11 +108,9 @@ each(names, function(item, indice){
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
 var getUserById = function(o, num, cb){
-  valuesArray = [];
   for(var i=0;i<o.length;i++){
     for(var j in o[i]){
       if(o[i][j] === num){
-        valuesArray = Object.values(o[i]);
         cb(o[i]);
       } 
     }
